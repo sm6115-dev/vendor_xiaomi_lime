@@ -6,6 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/lime
 
 PRODUCT_COPY_FILES += \
+    vendor/xiaomi/lime/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     vendor/xiaomi/lime/proprietary/product/vendor_overlay/30/lib/modules/audio_adsp_loader.ko:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/30/lib/modules/audio_adsp_loader.ko \
     vendor/xiaomi/lime/proprietary/product/vendor_overlay/30/lib/modules/audio_apr.ko:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/30/lib/modules/audio_apr.ko \
     vendor/xiaomi/lime/proprietary/product/vendor_overlay/30/lib/modules/audio_aw87359_audio.ko:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/30/lib/modules/audio_aw87359_audio.ko \
@@ -39,4 +40,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/lime/proprietary/product/vendor_overlay/30/lib/modules/modules.dep:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/30/lib/modules/modules.dep \
     vendor/xiaomi/lime/proprietary/product/vendor_overlay/30/lib/modules/modules.load:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/30/lib/modules/modules.load \
     vendor/xiaomi/lime/proprietary/product/vendor_overlay/30/lib/modules/modules.softdep:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/30/lib/modules/modules.softdep \
-    vendor/xiaomi/lime/proprietary/product/vendor_overlay/30/lib/modules/qca_cld3_wlan.ko:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/30/lib/modules/qca_cld3_wlan.ko
+    vendor/xiaomi/lime/proprietary/product/vendor_overlay/30/lib/modules/qca_cld3_wlan.ko:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/30/lib/modules/qca_cld3_wlan.ko \
+    vendor/xiaomi/lime/proprietary/product/vendor_overlay/30/lib/soundfx/libvolumelistener.so:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/30/lib/soundfx/libvolumelistener.so \
+    vendor/xiaomi/lime/proprietary/product/vendor_overlay/30/lib64/soundfx/libvolumelistener.so:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/30/lib64/soundfx/libvolumelistener.so
+
+PRODUCT_PACKAGES += \
+    HotwordEnrollmentOKGoogleHEXAGON \
+    HotwordEnrollmentXGoogleHEXAGON \
+    com.android.hotwordenrollment.common.util
